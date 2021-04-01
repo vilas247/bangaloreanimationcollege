@@ -1,0 +1,206 @@
+
+
+
+$('.sbmtContact').click(function(){
+	var l = Ladda.create(this);
+	var contact_name=$(".contact_name").val().trim();
+	var contact_email=$(".contact_email").val().trim();
+	var contact_message=$(".contact_message").val().trim();
+	var contact_phone_number=$(".contact_phone_number").val().trim();
+	var course_select = $('.select-course :selected').text();
+
+	
+	if(contact_name==""){
+		toastr.error('Please Put your name', '');
+		$("#contact_name").focus();
+		return false;
+	}
+	if(contact_email==""){
+		toastr.error('Please Put your email', '');
+		$(".contact_email").focus();
+		return false;
+	}else{
+		var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
+
+			if(!pattern.test(contact_email))// return boolean
+			{
+			  toastr.error('not a valid e-mail address', '');
+			  $(".contact_email").focus();
+			  return false;
+			}
+	}
+	if(contact_message==""){
+		toastr.error('Please Put your Nessage', '');
+		$(".contact_message").focus();
+		return false;
+	}
+	
+	if(course_select==""){
+		toastr.error('Please select a course', '');
+		$(".course_select").focus();
+		return false;
+	}
+	
+	if(!contact_phone_number.match('[0-9]{10}'))  {
+		toastr.error('Please put 10 digit mobile number', '');
+		$(".contact_phone_number").focus();
+		return false;
+	}
+	
+	/*if(contact_phone_number.length!=10){
+		
+	}*/
+
+	console.log(contact_name);
+	console.log(contact_email);
+	console.log(contact_message);
+	console.log(contact_phone_number);
+	console.log(course_select);
+	
+    
+	
+	//return false;
+	console.log(BASE_PATH+"== "+BASE_PATH);
+	$.ajax({
+		type : "POST",
+		url : BASE_PATH + "saveContactUs",
+		data : {
+			name : contact_name,
+			email : contact_email,
+			message : contact_message,
+			phone_number : contact_phone_number,
+			course_select : course_select
+		},
+		beforeSend : function() {
+			l.start();
+		},
+		success : function(data) {
+			var response = JSON.parse(data);
+			if (response.status) {
+				toastr.success(response.message, '', {
+					onHidden : function() {
+						window.location.reload();
+					}
+				});
+			} else {
+				toastr.error(response.message, '', {
+					onHidden : function() {
+						window.location.reload();
+					}
+				});
+			}
+			//console.log(data);
+
+		},
+		error : function(err) {
+			console.log(err);
+			l.stop();
+		}
+	});
+});
+
+
+
+
+
+
+$('.sbmtContact1').click(function(){
+	var l = Ladda.create(this);
+	var contact_name=$(".contact_name1").val().trim();
+	var contact_email=$(".contact_email1").val().trim();
+	var contact_message=$(".contact_message1").val().trim();
+	var contact_phone_number=$(".contact_phone_number1").val().trim();
+	var course_select = $('.select-course1 :selected').text();
+
+	
+	if(contact_name==""){
+		toastr.error('Please Put your name', '');
+		$("#contact_name1").focus();
+		return false;
+	}
+	if(contact_email==""){
+		toastr.error('Please Put your email', '');
+		$(".contact_email1").focus();
+		return false;
+	}else{
+		var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
+
+			if(!pattern.test(contact_email))// return boolean
+			{
+			  toastr.error('not a valid e-mail address', '');
+			  $(".contact_email1").focus();
+			  return false;
+			}
+	}
+	if(contact_message==""){
+		toastr.error('Please Put your Nessage', '');
+		$(".contact_message1").focus();
+		return false;
+	}
+	
+	if(course_select==""){
+		toastr.error('Please select a course', '');
+		$(".course_select1").focus();
+		return false;
+	}
+	
+	if(!contact_phone_number.match('[0-9]{10}'))  {
+		toastr.error('Please put 10 digit mobile number', '');
+		$(".contact_phone_number1").focus();
+		return false;
+	}
+	
+	/*if(contact_phone_number.length!=10){
+		
+	}*/
+
+	console.log(contact_name);
+	console.log(contact_email);
+	console.log(contact_message);
+	console.log(contact_phone_number);
+	console.log(course_select);
+	
+	
+	//return false;
+	console.log(BASE_PATH+"== "+BASE_PATH);
+	$.ajax({
+		type : "POST",
+		url : BASE_PATH + "saveContactUs",
+		data : {
+			name : contact_name,
+			email : contact_email,
+			message : contact_message,
+			phone_number : contact_phone_number,
+			course_select : course_select
+		},
+		beforeSend : function() {
+			l.start();
+		},
+		success : function(data) {
+			$('#popup').hide();
+		      $('#mask').fadeOut(500);
+			var response = JSON.parse(data);
+			if (response.status) {
+				toastr.success(response.message, '', {
+					onHidden : function() {
+						window.location.reload();
+					}
+				});
+			} else {
+				toastr.error(response.message, '', {
+					onHidden : function() {
+						window.location.reload();
+					}
+				});
+			}
+			//console.log(data);
+
+		},
+		error : function(err) {
+			$('#popup').hide();
+		      $('#mask').fadeOut(500);
+			console.log(err);
+			l.stop();
+		}
+	});
+});

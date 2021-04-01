@@ -1,0 +1,377 @@
+ @media(max-width: 1024px){
+
+    html{ font-size:90%}
+  
+}
+
+/*************************About-staff***********************/
+@media(max-width: 600px){
+   html{
+        overflow-x:hidden;
+    }
+    body{
+        position:relative;
+        overflow: hidden;
+    }
+    .card-staff{
+        display: block;
+    }
+    .card-staff-1{
+        display: block;
+    }
+    img.staff-img {
+    width: 100%;
+    margin-left: 0rem;
+}
+img.staff-img-1 {
+    width: 100%;
+    margin-left: 0rem;
+}
+.card-staff .about-staff {
+	margin-right: 0rem;
+}
+.card-staff-1 .about-staff {
+	margin-left: 0rem;
+}
+}
+@media(max-width: 1024px){
+    html{
+        overflow-x:hidden;
+    }
+    body{
+        position:relative;
+        overflow: hidden;
+    }
+	.card-staff .about-staff {
+	margin-right: 0rem;
+}
+.card-staff-1 .about-staff {
+	margin-left: 0rem;
+}
+	}
+
+/********************************About-college*******************/
+@media only screen and (max-width: 1024px){
+    html{
+        overflow-x:hidden;
+    }
+    body{
+        position:relative;
+        overflow: hidden;
+    }
+    #about-college {
+    background: none;
+}
+#about-college {
+    margin-bottom: 6.5rem;
+}
+.icon-college {
+    margin-left: 2rem;
+}
+.college-img {
+    width: 100%;
+}
+.card.content-college-1 {
+    margin-left: 2rem;
+    width: 92%;
+}
+.card.figure-college {
+    width: 93%;
+}
+}
+@media only screen and (max-width: 768){
+    html{
+        overflow-x:hidden;
+    }
+    body{
+        position:relative;
+        overflow: hidden;
+    }
+    #about-college {
+    background: none;
+}
+    .card.content-college-1 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+}
+@media only screen and (max-width: 425px){
+    html{
+        overflow-x:hidden;
+    }
+    body{
+        position:relative;
+        overflow: hidden;
+    }
+    #about-college {
+    background: none;
+}
+    .card.content-college-1 {
+    margin-left: 1rem;
+}
+.box-college {
+    margin-bottom: 1rem;
+}
+.box-college i {
+    font-size: 3rem;
+    color: red;
+    margin-top: 6%;
+}
+.figure-college p {
+     margin-left: 0px; 
+    text-align: center;
+    margin-top: 0.9rem;
+    font-size: 1.1rem;
+}
+    }
+@media(max-width: 600px){
+    html{
+        overflow-x:hidden;
+    }
+    body{
+        position:relative;
+        overflow: hidden;
+    }
+    #about-college {
+    background: none;
+}
+.icon-college {
+    margin-left: 1.5rem;
+}
+.card.content-college-1 {
+    margin-left: 1.5rem;
+    width: 89%;
+}
+.card.figure-college {
+    width: 98%;
+}
+}
+/***************************Why-BAC***************************/
+
+@media(max-width: 600px){
+    html{
+        overflow-x:hidden;
+    }
+    body{
+        position:relative;
+        overflow: hidden;
+    }
+    .BAC-image{
+        display: none;
+    }
+   
+.about-BAC {
+    margin-top: 0rem;
+}
+
+    }
+    @media only screen and (device-width: 768px){
+.about-BAC {
+    margin-top: -32rem;
+}
+}
+
+
+/****************************Staff****************************/
+@media(max-width: 600px){
+    html{
+        overflow-x:hidden;
+    }
+    body{
+        position:relative;
+        overflow: hidden;
+    }
+    #About-animat-staff {
+    background-color: #f1f1f1;
+    margin-top: -5rem;
+}
+.BAC_content{
+    margin-top: 3.5rem;
+}
+}
+/***************************About-university*****************/
+@media only screen and (max-width: 1024px){
+    #about-university {
+    background: none;
+}
+.university-img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 9%;
+    width: 95%;
+}
+.card.content-university-1 {
+    margin-right: 9%;
+    margin-top: 1rem;
+    height: 94%;
+}
+
+   
+ 
+}
+@media only screen and (device-width: 768){
+    
+    #about-college {
+    background: none;
+}
+
+}
+@media(max-width: 600px){
+   
+    #about-university {
+    background: none;
+}
+.university-img{
+    margin-left: 4%;
+
+}
+.card.content-university-1 {
+    margin-left: 4%;
+    margin-right: 0%;
+    width: 93%;
+}
+
+}
+/*********************************paintings-gallery**************************/
+@media only screen and (max-width: 1440px){
+    html{
+        overflow-x:hidden;
+    }
+    body{
+        position:relative;
+        overflow: hidden;
+    }
+    .gallery-1 {
+    margin: 0px -0.4rem 0.6rem 0;
+}
+.students-gallery {
+    margin-left: 8rem;
+}
+@media only screen and (max-width: 1200px){
+    html{
+        overflow-x:hidden;
+    }
+    body{
+        position:relative;
+        overflow: hidden;
+    }
+    .gallery-1 {
+    margin: 0px -4.4rem 0.6rem 0;
+}
+.students-gallery {
+    margin-left: 3rem;
+}
+.gallery-1 img {
+    -webkit-transition: .8s;
+    max-width: 74%;
+}
+.gallery-2 {
+    margin: 0px -4.4rem 0.6rem 0;
+}
+.gallery-2 img {
+    -webkit-transition: .8s;
+    max-width: 74%;
+}
+#showcase {
+    height: 62rem;
+}
+ #showcase h1 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+section#video-gallery {
+    background: none;
+}
+}
+    @media only screen and (max-width: 768px){
+        html{
+        overflow-x:hidden;
+    }
+    body{
+        position:relative;
+        overflow: hidden;
+    }
+.students-gallery {
+    margin-left: 8rem;
+    margin-top: 0rem;
+}
+#showcase {
+    height: 77rem;
+}
+.course-name-1 {
+    margin-top: 16rem;
+    margin-left: 3rem;
+    }
+    .course-name-4 {
+    margin-top: 12rem;
+    margin-left: 4rem;
+}
+.course-name-6 {
+    -webkit-transform: translate(-70px, -37px) rotate( 
+9deg
+ );
+}
+.course-name-8 {
+    -webkit-transform: translate(-67px, -32px) rotate( 
+9deg
+ );
+}
+.course-name-5 {
+    -webkit-transform: translate(-47px, -40px) rotate( 
+-11deg);
+}
+.course-name-3 {
+    -webkit-transform: translate(-94px, -29px) rotate( 
+9deg
+ );
+}
+
+}
+@media only screen and (max-width:500px){
+    html{
+        overflow-x:hidden;
+    }
+    body{
+        position:relative;
+        overflow: hidden;
+    }
+    #showcase h1 {
+    font-size: 0.8rem;
+}
+.students-gallery {
+    margin-left: 9rem;
+    margin-top: 0rem;
+}
+#showcase {
+    height: 155rem;
+}
+
+}
+@media only screen and (max-width: 320px){
+    html{
+        overflow-x:hidden;
+    }
+    body{
+        position:relative;
+        overflow: hidden;
+    }
+#showcase h1 {
+    font-size: 0.8rem;
+}
+.students-gallery {
+    margin-left: 4rem;
+}
+}
+/*********************showcase-gallery************************/
+
+@media only screen and (max-width: 425px){
+    .show-about {
+    padding: 1rem 2.5rem;
+}
+}
+
+
+
+
+
+
